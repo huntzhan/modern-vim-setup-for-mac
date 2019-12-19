@@ -25,4 +25,5 @@ call entrypoint#source_plugin('layout.vim')
 call entrypoint#source_plugin('latex.vim')
 call entrypoint#source_plugin('snippet.vim')
 call entrypoint#source_plugin('editconfig.vim')
+call entrypoint#source_plugin('markdown.vim')
 
