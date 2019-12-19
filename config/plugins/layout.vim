@@ -23,3 +23,10 @@ map <Leader>bl :MBEToggle<cr>
 noremap <C-A> :MBEbp<CR>
 noremap <C-D> :MBEbn<CR>
 
+" Search in project.
+call dein#add('dyng/ctrlsf.vim')
+nnoremap <Leader>sip :CtrlSF<CR>
+
+" Multiple cursors.
+call dein#add('terryma/vim-multiple-cursors')
+

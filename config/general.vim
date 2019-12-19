@@ -23,10 +23,10 @@ nmap <Leader>w :w<CR>
 
 " Jumping.
 nnoremap nw <C-W><C-W>
-nnoremap <Leader>lw <C-W>l
-nnoremap <Leader>hw <C-W>h
-nnoremap <Leader>kw <C-W>k
-nnoremap <Leader>jw <C-W>j
+nnoremap <Leader>wl <C-W>l
+nnoremap <Leader>wh <C-W>h
+nnoremap <Leader>wk <C-W>k
+nnoremap <Leader>wj <C-W>j
 nmap <Leader>M %
 
 " Search.

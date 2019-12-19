@@ -21,7 +21,6 @@ endfunction
 call entrypoint#source('init.vim')
 call entrypoint#source('general.vim')
 
-call entrypoint#source_plugin('dein.vim')
 call entrypoint#source_plugin('layout.vim')
 call entrypoint#source_plugin('latex.vim')
 call entrypoint#source_plugin('snippet.vim')
