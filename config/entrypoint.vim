@@ -1,5 +1,9 @@
 let s:path = expand('<sfile>:p:h')
 
+function entrypoint#config_root()
+  return s:path
+endfunction
+
 function entrypoint#local_path(name, ...)
   let l:mid = a:0 > 0 ? a:1 : '/'
   let l:local_path = s:path . l:mid . a:name
@@ -15,12 +19,11 @@ function entrypoint#source_plugin(script)
 endfunction
 
 call entrypoint#source('init.vim')
+call entrypoint#source('general.vim')
 
 call entrypoint#source_plugin('dein.vim')
-call entrypoint#source_plugin('color-scheme.vim')
+call entrypoint#source_plugin('layout.vim')
 call entrypoint#source_plugin('latex.vim')
 call entrypoint#source_plugin('snippet.vim')
 call entrypoint#source_plugin('editconfig.vim')
-
-call entrypoint#source('general.vim')
 

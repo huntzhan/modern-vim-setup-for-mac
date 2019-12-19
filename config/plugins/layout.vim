@@ -1,0 +1,25 @@
+" Color scheme
+call dein#add('arcticicestudio/nord-vim')
+
+if has("termguicolors")
+  " Enable true color.
+  set termguicolors
+endif
+
+colorscheme nord
+
+" File system explorer
+call dein#add('scrooloose/nerdtree')
+
+nmap <Leader>fl :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeAutoDeleteBuffer = 1
+
+" Buffer explorer.
+call dein#add('fholgado/minibufexpl.vim')
+
+map <Leader>bl :MBEToggle<cr>
+map <C-A> :MBEbp<CR>
+map <C-D> :MBEbn<CR>
+
