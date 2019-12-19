@@ -24,3 +24,19 @@ hi Conceal ctermbg=none ctermfg=none guifg=none guibg=none
 set conceallevel=1
 let g:tex_conceal = 'abdmg'
 
+" Rename RPC socket to for skim2nvr.
+python3 << EOF
+
+import os
+import vim
+
+root = os.getcwd()
+if '~>' in root:
+    print('~> is not allowed in path!')
+
+suffix = root.lstrip('/').replace('/', '~>')
+servername = '/tmp/nvim|>' + suffix
+
+vim.eval(f'serverstart("{servername}")')
+
+EOF
