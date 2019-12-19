@@ -20,6 +20,6 @@ let NERDTreeAutoDeleteBuffer = 1
 call dein#add('fholgado/minibufexpl.vim')
 
 map <Leader>bl :MBEToggle<cr>
-map <C-A> :MBEbp<CR>
-map <C-D> :MBEbn<CR>
+noremap <C-A> :MBEbp<CR>
+noremap <C-D> :MBEbn<CR>
 
